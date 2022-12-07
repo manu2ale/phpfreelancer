@@ -10,6 +10,15 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+.servicios,
+.navegacion-principal,
+.contacto {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 *, *::before, *::after{
@@ -216,7 +225,7 @@ h1,h2,h3 {
 }
 
 .input-text {
-    width: 100%;
+    width: 95%;
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
@@ -224,4 +233,10 @@ h1,h2,h3 {
 
 .enviar .boton{
     width: 100%;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
 }
