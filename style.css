@@ -16,7 +16,8 @@ html {
 
 .servicios,
 .navegacion-principal,
-.contacto {
+.contacto,
+.footer {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
@@ -235,8 +236,20 @@ h1,h2,h3 {
     width: 100%;
 }
 
+legend {
+    padding: 1rem;
+}
+
 /* footer */
 
 .footer {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .servicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
